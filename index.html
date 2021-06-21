@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carla Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="account">
+        <img class="profile"src="images/proPic_carla.png">
+        <div class="text">
+            <p><h1>Carla Poma</h1><br>
+            <h2>docente - Urbino</h2></p>
+        </div>
+    </div>
+    <div class="container" onclick="expand()">
+        <div class="toggle" id="toggle">
+            <div class="text"><a href="#">IO</a></div>
+        </div>
+        <div class="menu" id="menu">
+            <div class="item">
+                <div class="text">
+                    <a href="family.html">FAMIGLIA</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <a href="friends.html">AMICI</a>
+                </div>
+            </div>
+            <div class="item" id="natale">
+                <div class="text">
+                    <a href="https://marucaibo.github.io/Yayoi-Kusama--in-equilibrio-tra-arte-e-malattia/">NATALE</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <a href="work.html">LAVORO</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <a href="bank.html">V-Bank</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <a href="#">ALTRE ROBE</a>
+                </div>
+            </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    var j = 0;
+    var i = document.getElementById("menu").childNodes;
+    function expand() {
+        if (j == 0) {
+            document.getElementById("menu").style.transform='scale(1)';
+            i[1].style.transform = 'translateY(-320px)';
+            i[3].style.transform = 'translate(280px, -160px)';
+            i[5].style.transform = 'translate(280px, 160px)';
+            i[7].style.transform = 'translateY(320px)';
+            i[9].style.transform = 'translate(-280px, 160px)';
+           // i[11].style.transform = 'translate(-140px, -80px)';
+            j = 1;
+        } else{
+            document.getElementById("menu").style.transform='scale(0.9)';
+            i[1].style.transform = 'translateY(0)';
+            i[3].style.transform = 'translate(0)';
+            i[5].style.transform = 'translate(0)';
+            i[7].style.transform = 'translateY(0)';
+            i[9].style.transform = 'translate(0)';
+            i[11].style.transform = 'translate(0)';
+            j = 0;
+        }
+    }
+</script>
+
+</html>

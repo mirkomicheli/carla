@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-color: rgb(20, 70, 100);
+    font-family:"bebas neue", sans-serif;
+    letter-spacing: 0.3em;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+width: 100%;
+}
+
+.header{
+width: 100%;
+height: 200px;
+align-items: center;
+}
+
+.header h1{
+    font-size: 60px;
+    line-height: 200px;
+    text-align:center;
+    color: white;
+}
+
+.toggle{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    border-bottom: 2px solid white;
+}
+
+.profile{
+    width: 50%;
+    height: 90%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#madre{
+    background-image: url(images/motherPic.png);
+}
+
+#padre{
+    background-image: url(images/fatherPic.png);
+}
+
+#figlio{
+    background-image: url(images/soonPic.png);
+}
+
+#marito{
+    background-image: url(images/maritoPic.png);
+}
+
+.toggle .text{
+    width: 50%;
+    color:white;
+    font-size: 24px;
+}
+
+.homeBtn{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display:  flex;
+    justify-content:space-around;
+}
+
+.homeBtn a{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    line-height: 200px;
+}

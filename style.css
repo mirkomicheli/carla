@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+a:link{
+    color: rgb(20, 70, 100);
+}
+
+a:visited{
+    color: rgb(20, 70, 100);
+}
+body{
+    background-color: rgb(20, 70, 100);
+    font-family:"bebas neue", sans-serif;
+    letter-spacing: 0.3em;
+    padding: 0;
+    margin: 0;
+}
+
+.account{
+    z-index: -1;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 100%;
+    height: 280px;
+    display: flex;
+}
+
+.profile{
+    height:100%;
+}
+.account .text{
+    color: white;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.account h1{
+    font-size: 48px;
+    margin:0;
+}
+
+.account h2{
+    font-size: 30px;
+    margin:0;
+}
+
+/* classi icona centrale */
+
+.container, .menu{
+    height: 280px;
+    width: 320px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.menu{
+    z-index: -1;
+    transform: scale(0.9);
+}
+
+.toggle{
+    height: 0;
+    width: 160px;
+    border-bottom: 140px solid rgb(95, 215, 240);
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    position: absolute;
+    top: 0;
+}
+
+.toggle:before{
+    content: '';
+    height: 0;
+    width: 160px;
+    border-top: 140px solid rgb(95, 215, 240);
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    position: absolute;
+    top: 140px;
+    left: -80px;
+}
+
+.toggle .text{
+    position:relative;
+    text-align: center;
+    top: 90px;
+    font-size: 72px;
+}
+
+/* classi icona menu */
+.item{
+    height: 0;
+    width: 160px;
+    border-bottom: 140px solid white;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.item:before{
+    content: '';
+    height: 0;
+    width: 160px;
+    border-top: 140px solid white;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    position: absolute;
+    top: 140px;
+    left: -80px;
+}
+
+#natale{
+    height: 0;
+    width: 160px;
+    border-bottom: 140px solid orange;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#natale:before{
+    content: '';
+    height: 0;
+    width: 160px;
+    border-top: 140px solid orange;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    position: absolute;
+    top: 140px;
+    left: -80px;
+}
+
+.item .text{
+    position:relative;
+    text-align: center;
+    top: 140px;
+    font-size: 34px;
+}
